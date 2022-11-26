@@ -7,21 +7,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float MoveSpeed;
     Vector2 MoveDir;
     Vector2 MousePos;
-    [SerializeField] float MaxHP = 100f;
-    float HP;
     static public float CurrentAngle;
-    private void Start() {
-        HP = MaxHP;
-    }
     void Update()
     {
         PlayerInput();
         MousePos = Cam.ScreenToWorldPoint(Input.mousePosition);
-        //kill player
-        if(HP <= 0)
-        {
-            Destroy(gameObject);
-        }
     }
     void PlayerInput()
     {
@@ -40,9 +30,5 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
         rb.velocity = new Vector2(MoveDir.x * MoveSpeed * Time.fixedDeltaTime, MoveDir.y * MoveSpeed * Time.fixedDeltaTime);
-    }
-    public void GetHurt(float Damage)
-    {
-        HP -= Damage;
     }
 }
