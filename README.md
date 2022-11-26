@@ -5,7 +5,7 @@ Share cho mọi người script di chuyển và bắn súng của player trong g
 
 This is some code from my small game :D.
 
-*please attach rigidbody to your player, make sure that ur gun is player's children.
+*please attach rigidbody to your player (also the bullet), make sure that ur gun is player's children.
 
 *also I use scriptable object for gun data .
 
