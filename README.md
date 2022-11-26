@@ -6,6 +6,9 @@ Share cho mọi người script di chuyển và bắn súng của player trong g
 This is some code from my small game :D.
 
 *please attach rigidbody to your player, make sure that ur gun is player's children.
+
 *also I use scriptable object for gun data .
+
 *also set the pivot of your gun sprite at the gun tip.
+
 *and remember to give player tag "Player".
