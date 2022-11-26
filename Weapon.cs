@@ -33,7 +33,7 @@ public class Weapon : MonoBehaviour
         {
             Rotation = PlayerTranform.eulerAngles.z - 360f;
         }
-        if(Rotation > 0f && !(gameObject.name == "Bow"))
+        if(Rotation > 0f)
         {
             CurrentSprite.flipY = true;
         }
